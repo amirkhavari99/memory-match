@@ -9,7 +9,7 @@ public class Grid : MonoBehaviour
     [SerializeField] private GridLayoutGroup gridLayoutGroup;
     [SerializeField] private Card cardPrefab;
 
-    public void Init(int rows, int cols)
+    public void Init(int rows, int cols, LevelController levelController)
     {
         int numOfCards = rows * cols;
         // Safety check
@@ -45,7 +45,7 @@ public class Grid : MonoBehaviour
         for (int i = 0; i < numOfCards; i++)
         {
             Card generatedCard = Instantiate(cardPrefab, gridRect);
-            generatedCard.Init(numbers[i]);
+            generatedCard.Init(numbers[i], levelController);
         }
     }
     

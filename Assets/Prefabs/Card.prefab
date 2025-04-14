@@ -143,8 +143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2735378590577049917}
   text: {fileID: 2735378589058139818}
-  backSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  frontSprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  backColor: {r: 0.7735849, g: 0.7575294, b: 0.7575294, a: 1}
+  frontColor: {r: 0.9882353, g: 1, b: 0.45882353, a: 1}
+  matchedColor: {r: 0.45882356, g: 1, b: 0.58942586, a: 1}
   button: {fileID: 2735378590577049912}
 --- !u!114 &2735378590577049917
 MonoBehaviour:
@@ -201,7 +202,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -222,7 +223,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2735378590577049915}
         m_TargetAssemblyTypeName: Card, Assembly-CSharp
-        m_MethodName: FlipCard
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
